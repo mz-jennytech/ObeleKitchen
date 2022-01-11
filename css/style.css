@@ -70,8 +70,8 @@ a:hover{
 }
 
 h2{
-    color: #2f3640;
-    font-size: 2rem;
+    color: black;
+    font-size: 2.5rem;
     margin-bottom: 2%;
 }
 
@@ -183,4 +183,98 @@ h3{
 .social ul li{
     display: inline;
     padding: 1%;
+}
+
+
+.about {
+    background-color: rgb(246, 250, 252);
+    
+}
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.about .about-content .left{
+    width: 45%;
+}
+
+.about .about-content .left img{
+    height: 380px;
+    width: 350px;
+    border-radius: 6px;
+     object-fit: cover;
+     margin-left: 80px;
+}
+
+.about .about-content .right .text{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: black;
+    margin-right: 20px;
+}
+.about .about-content .right{
+    width: 55%;
+}
+.about .about-content .right p{
+    text-align: justify;
+    font-size: 30px;
+    color: black;
+    margin-bottom: 20px;
+    margin-right: 40px;
+}
+
+@media only screen and (max-width: 370px) {
+    h3{
+    font-size: 0.8rem;
+    }
+    h2{
+        font-size: 2.2rem;
+        color: black;
+    }
+
+    .float-text{
+        bottom: -25%;
+    }
+    .about .about-content{
+       display: inline;
+        text-align: center;
+        justify-content: space-between;
+    }
+    .about .about-content .left img{
+        text-align: center;
+        height: 280px;
+        width: 250px;
+        border-radius: 4px;
+        margin-left: 0px;
+        position: relative;
+        left: 50px;
+    }
+
+    .about .about-content .right .text{
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        color: black;
+        text-align: center;
+        margin-right: 0px;
+        margin-top: 15px;
+        position: relative;
+        left: 80px;
+    }
+
+    .about .about-content .right p{
+        text-align: center;
+        font-size: 15px;
+        color: black;
+        margin-bottom: 15px;
+        margin-right: 0px;
+        position: relative;
+        left: 80px;
+    }
+   
+   
+    
 }
