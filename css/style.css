@@ -226,7 +226,7 @@ h3{
     margin-right: 40px;
 }
 
-@media only screen and (max-width: 370px) {
+@media only screen and (max-width: 450px) {
     h3{
     font-size: 0.8rem;
     }
