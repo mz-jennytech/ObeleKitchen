@@ -75,8 +75,9 @@ h2{
     margin-bottom: 2%;
 }
 
-h3{
+.float-container h3{
     font-size: 1.5rem;
+    margin-bottom: -40px;
 }
 
 .float-container{
@@ -209,7 +210,7 @@ h3{
 }
 
 .about .about-content .right .text{
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 600;
     margin-bottom: 15px;
     color: black;
@@ -220,7 +221,7 @@ h3{
 }
 .about .about-content .right p{
     text-align: justify;
-    font-size: 30px;
+    font-size: 25px;
     color: black;
     margin-bottom: 20px;
     margin-right: 40px;
@@ -228,13 +229,32 @@ h3{
 
 @media only screen and (max-width: 450px) {
     h3{
-    font-size: 0.8rem;
+    font-size: 15px;
     }
     h2{
+        margin-top: 60px;
         font-size: 2.2rem;
         color: black;
     }
+    .container{
+        width: 100%;
+    }
 
+    .logo .img-responsive{
+        height: 62px;
+        width: 90px;
+        position: relative;
+        bottom: 5px;
+        right: 2px;
+    }
+    .navbar{
+        height: 60px;
+    }
+    .float-container .img-responsive{
+        height: 150px;
+        width: 100px;
+        border-radius: 10px;
+    }
     .float-text{
         bottom: -25%;
     }
@@ -245,12 +265,12 @@ h3{
     }
     .about .about-content .left img{
         text-align: center;
-        height: 280px;
+        height: 250px;
         width: 250px;
-        border-radius: 4px;
-        margin-left: 0px;
+        border-radius: 6px;
         position: relative;
-        left: 50px;
+        left: auto;
+        right: auto;
     }
 
     .about .about-content .right .text{
@@ -266,7 +286,7 @@ h3{
     }
 
     .about .about-content .right p{
-        text-align: center;
+     
         font-size: 15px;
         color: black;
         margin-bottom: 15px;
@@ -275,6 +295,38 @@ h3{
         left: 80px;
     }
    
-   
-    
+   .social,
+   .footer{
+       position: relative;
+       top: 40px;
+   }
+   .food-menu-box{
+    height:auto;
+    width: 43%;
+    margin:1%;
+    padding: 2%;
+    float: left;
+    background-color: white;
+    border-radius: 15px;
+}
+.food-menu-img{
+    width: 20%;
+    float: left;
+}
+.food-menu-desc{
+    width: 70%;
+    float: left;
+    margin-left: 8%;
+}
+
+.food-price{
+    font-size: 1.2rem;
+    margin: 2% 0;
+}
+
+.food-detail{
+    font-size: 12px;
+    color: #747d8c;
+}
+
 }
