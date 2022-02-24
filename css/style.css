@@ -75,18 +75,15 @@ h2{
     margin-bottom: 2%;
 }
 
-.float-container h3{
-    font-size: 1.5rem;
-    margin-bottom: -40px;
-}
-
 .float-container{
     position: relative;
 }
-.float-text{
+.float-container .float-text{
     position: absolute;
     bottom: -10%;
     left: 35%;
+    font-size: 1.5rem;
+    margin-bottom: -40px;
 }
 
 /* css for navbar section */
@@ -96,6 +93,13 @@ h2{
     width: 10%;
 
     float: left;
+}
+.logo .img-responsive{
+    height: 80px;
+    width: 150px;
+    position: relative;
+    bottom: 5px;
+    right: 50px;
 }
 .menu{
     line-height: 80px;
@@ -227,14 +231,16 @@ h2{
     margin-right: 40px;
 }
 
-@media only screen and (max-width: 450px) {
-    h3{
-    font-size: 15px;
-    }
+@media only screen and (max-width: 350px) {
+    
     h2{
         margin-top: 60px;
-        font-size: 2.2rem;
+        font-size: 1.5rem;
         color: black;
+    }
+    .float-container .float-text{
+        font-size: 15px;
+        bottom: 8px;
     }
     .container{
         width: 100%;
@@ -255,9 +261,7 @@ h2{
         width: 100px;
         border-radius: 10px;
     }
-    .float-text{
-        bottom: -25%;
-    }
+    
     .about .about-content{
        display: inline;
         text-align: center;
@@ -329,4 +333,81 @@ h2{
     color: #747d8c;
 }
 
+}
+
+@media only screen and (min-width: 380px) {
+    .container{
+        width: 100%;
+    }
+
+    h2{
+        color: black;
+        font-size: 1.8rem;
+        margin-bottom: 2%;
+    }
+
+    .float-container .float-text{
+        font-size: 15px;
+    }
+
+    .social,
+   .footer{
+       position: relative;
+       top: 100px;
+   }
+
+   .float-container{
+       padding-top: 30px;
+   }
+}
+
+.logo .img-responsive{
+    height: 72px;
+    width: 110px;
+    position: relative;
+    top: 8px;
+    left: 35px;
+}
+
+.about {
+    background-color: rgb(246, 250, 252);
+    
+}
+.about .about-content{
+    display: inline;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    left: 25%;
+
+}
+.about .about-content .left{
+    width: 45%;
+}
+
+.about .about-content .left img{
+    height: 320px;
+    width: 280px;
+    border-radius: 6px;
+     object-fit: cover;
+     margin: 0;
+     align-self: center;
+}
+
+.about .about-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: black;
+    text-align: center;
+    
+}
+.about .about-content .right{
+    width: 55%;
+}
+.about .about-content .right p{
+    text-align: justify;
+    font-size: 18px;
+    color: black;
+    margin: 0;
 }
